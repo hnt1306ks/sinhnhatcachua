@@ -16,15 +16,15 @@
                 <div class="handsCat">
                     <img src="../image/handsCat.png" alt="">
                 </div>
-                <h1>Welcome</h1>
+                <h1> Hello babeeee !!! </h1>
             </div>
             <div class="boxSlider">
                     <div class="listSlider">
                         <div class="slider">
-                            <img src="../image/love1.jfif" alt="">
+                            <img src="../image/cachua1.jpg" alt="">
                         </div>
-                        <div class="slider">
-                            <img src="../image/love2.png" alt="">
+                        <div class="slider">  
+                            <img src="../image/cachua2.jpg" alt="">
                         </div>
                     </div>
                 <div class="left">
@@ -38,7 +38,7 @@
                 <div class="handsCatImgInput">
                     <img src="../image/handsCat.png" alt="">
                 </div>
-                <input type="text" id="inputField" placeholder="Nhập tên..." readonly>
+                <input type="text" id="inputField" placeholder="Hôm nay là sinh nhật ai ta" readonly>
             </div>
             <div class="buttonLove">
                 <div class="cricleBtn"></div>
@@ -94,7 +94,7 @@
                 <div class="wrapperLetter">
                     <div class="giftbox">
                         <div class="img">
-                            <img src="../image/giftbox.png" alt="">
+                            <img src="../image/toml.png" alt="">
                         </div>
                     </div>
                     <div class="textLetter">
@@ -171,8 +171,8 @@
     }
 
     const inputField = document.getElementById('inputField');
-    const textToType = "Ngân Hà"; // thay đổi tên người yêu của bạn
-    const typingSpeed = 100; // milliseconds per character
+    const textToType = "Sinh nhật bé Cà Chua của tui đúm hok";  
+    const typingSpeed = 30; // milliseconds per character
 
     let charIndex = 0;
     function typeText() {
@@ -202,7 +202,7 @@
                 document.querySelector(".button").style.height = "30px"
             },3500)
             setTimeout(()=>{
-                document.querySelector(".button").innerHTML = "Nhận thư"
+                document.querySelector(".button").innerHTML = "Ấn zô đi"
             },4000)
         }
     }
@@ -215,7 +215,7 @@
     // .textLetter text h2
     let indexText = 0;
     let textLetter = document.querySelector('.textLetter h2');
-    const textLetterH2 = "Gửi em!";
+    const textLetterH2 = "Happy Birthday !!! <3";
     let timoutTextLetter;
 
     function textCharLetter(){
@@ -237,20 +237,20 @@
         clearInterval(timoutTextLetter);
         timoutTextLetter =  setInterval(()=>{
                 textCharLetter();
-            }, 200)
+            }, 100)
     }
 
     // chữ của thư bạn muốn gửi
     let indexTextContent = 0;
     let textLetterContent = document.querySelector('.contentLetter');
     // thay đổi lời chúc
-    const textLetterP = "1 tuần có 7 ngày. 1 ngày có 24 giờ. 1 giờ có 60 phút. 1 phút có 60 giây. Không có một ngày hoặc giờ mà tôi không nhớ bạn. Không có giây phút nào mà anh không nghĩ đến cậu. Tâm hồn và trái tim tôi tràn ngập bạn. Nhớ và yêu em nhiều lắm.";
+    const textLetterP = "Anh Hưng mafia internet, ông trùm kéo viu số 1 Việt Nam, chúc cho em Chua sinh nhật vui vẻ, chúc em Chua gặp nhiều may mắn, Chúc cho công việc của em Chua gặp nhiều thuận lợi, 8386 em Chua nhá! Cà chua mãi đỉnh mãi đỉnh mãi đỉnh luôn !!! ";
     let timoutTextLetterContent;
     function textCharLetterContent(){
         if (indexTextContent < textLetterP.length) {
             textLetterContent.textContent += textLetterP[indexTextContent];
             indexTextContent++;
-            setTimeout(indexTextContent, 100);
+            setTimeout(indexTextContent, 50);
         }
         else{
             clearInterval(timoutTextLetterContent)
